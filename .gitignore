@@ -97,5 +97,9 @@ ENV/
 # mkdocs documentation
 /site
 
+#data
+*.7z
+*.csv
+
 # mypy
 .mypy_cache/
