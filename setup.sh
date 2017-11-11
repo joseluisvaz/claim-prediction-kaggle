@@ -18,4 +18,12 @@ echo "c.NotebookApp.ip" = '*' >> ~/.jupyter/jupyter_notebook_config.py
 echo "c.NotebookApp.open_browser" = False >> ~/.jupyter/jupyter_notebook_config.py
 echo "c.NotebookApp.port = 5000" >> ~/.jupyter/jupyter_notebook_config.py
 
+#DOWNLOAD DATA
+wget https://www.dropbox.com/s/7yf6ll0kgnm456k/train.csv.zip
+wget https://www.dropbox.com/s/mmrqjore7vkxy0o/test.csv.zip
 
+unzip train.csv.zip
+unzip test.csv.zip
+
+rm -rf train.csv.zip
+rm -rf test.csv.zip
